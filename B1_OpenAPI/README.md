@@ -12,6 +12,7 @@
   - [2.4. Beispiel ToDo API](#24-beispiel-todo-api)
 - [3. Aufgaben](#3-aufgaben)
   - [3.1. Aufgabe OpenAPI (Swagger Editor)](#31-aufgabe-openapi-swagger-editor)
+  - [3.2. Aufgabe Blogging-Plattform](#32-aufgabe-blogging-plattform)
 
 ---
 
@@ -363,8 +364,7 @@ Der Swagger-Editor bietet eine einfache Möglichkeit, mit der OpenAPI-Spezifikat
 
 |                     |                                                                                         |
 | ------------------- | --------------------------------------------------------------------------------------- |
-| **Lernziele**       | Sie können per OpenAPI Spezifikation eine vollständige API                              |
-|                     | Beschreibung für CRUD definieren.                                                       |
+| **Lernziele**       | Sie können per OpenAPI Spezifikation eine vollständige API dokumentieren                |
 |                     | Sie können die API-Spezifikation visualisieren und testen.                              |
 |                     | Die können aus der OpenAPI Spezifikation die Code Stubs für Server u. Clients erzeugen. |
 | **Sozialform**      | Einzelarbeit                                                                            |
@@ -384,3 +384,71 @@ Definiere zudem auch die Input- und Output-Models und referenziere diese an den 
 - [GET] /users/:id
 
 ![Aufgabe Swagger Editor](./x_gitres/task-swagger-editor.png)
+
+## 3.2. Aufgabe Blogging-Plattform
+
+|                     |                                                                            |
+| ------------------- | -------------------------------------------------------------------------- |
+| **Lernziele**       | Sie können per OpenAPI Spezifikation nach Vorgabe festlegen                |
+|                     | Sie kennen den Best Practices Konventionen für die Benennung der Endpoints |
+| **Sozialform**      | Einzelarbeit                                                               |
+| **Auftrag**         | siehe unten                                                                |
+| **Hilfsmittel**     | [Swagger Editor](https://swagger.io/tools/swagger-editor/)                 |
+| **Zeitbedarf**      | 60min                                                                      |
+| **Lösungselemente** | API-Dokumentation (JSON oder YML)                                          |
+
+**Ausgangslage**
+Die Benennung von Endpoints in einer REST API folgt bestimmten Best Practices, um Klarheit und Einheitlichkeit zu gewährleisten.
+Diese Konventionen basieren auf der Verwendung von HTTP-Methoden und der Strukturierung der Routen nach Ressourcen.
+Die Einhaltung dieser Konventionen verbessert die Verständlichkeit und Wartbarkeit der API und ermöglicht eine konsistente Nutzung.
+
+**Aufgabe**
+Für eine Blogging-Plattform, die über ein REST-API Service verschiedene Ressourcen anbietet, muss eine OpenAPI Dokumentation erstellt werden.
+
+Erstelle rür die Verwaltung der Blog-Posts zu folgende Services eine korrekte OpenAPI-Dokumentation (Best Practices) der Endpunkte.
+
+Blog-Posts verwalten:
+
+- Liste aller Blog-Posts abrufen.
+- Details eines bestimmten Posts abrufen.
+- Neuen Blog-Post erstellen.
+- Blog-Post aktualisieren.
+- Blog-Post löschen.
+
+Kommentare zu einem Blog-Post verwalten:
+
+- Liste aller Kommentare eines Posts abrufen.
+- Kommentar zu einem Post hinzufügen.
+- Kommentar löschen.
+
+Filter und Query-Parameter:
+
+- Alle Posts eines bestimmten Autors abrufen.
+- Alle Posts mit einem bestimmten Tag sortiert nach Datum abrufen.
+
+**Beispiel:**
+
+```console
+openapi: 3.0.0
+info:
+  title: Blogging Platform API
+  description: API für eine Blogging-Plattform, die Benutzer, Posts und Kommentare verwaltet.
+  version: 1.0.0
+servers:
+  - url: https://api.example.com/v1
+    description: Haupt-API-Server
+
+paths:
+  /users:
+    get:
+      summary: Liste aller Benutzer abrufen
+      responses:
+        '200':
+          description: Erfolgreiche Antwort
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/User'
+```
