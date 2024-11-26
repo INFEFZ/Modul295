@@ -60,7 +60,7 @@ Zu den wichtigsten Swagger-Tools gehören:
 
 Sie können OpenAPI-Definitionen in YAML oder JSON schreiben. In diesem Leitfaden verwenden wir nur YAML-Beispiele, aber JSON funktioniert genauso gut. Eine OpenAPI 3.0-Definition in YAML sieht wie folgt aus:
 
-- Metadata
+**Metadata**
 Jede API-Definition muss die Version der OpenAPI-Spezifikation enthalten, auf der diese Definition basiert:
 
 ```console
@@ -71,7 +71,7 @@ Jede API-Definition muss die Version der OpenAPI-Spezifikation enthalten, auf de
     version: 0.1.9
 ```
 
-- Servers
+**Servers**
 Im Abschnitt Server werden der API-Server und die Basis-URL angegeben. Sie können einen oder mehrere Server definieren, z. B. Produktion und Sandbox.
 
 ```console
@@ -82,7 +82,7 @@ Im Abschnitt Server werden der API-Server und die Basis-URL angegeben. Sie könn
       description: Optional server description, e.g. Internal staging server for testing
 ```
 
-- Paths
+**Paths**
 Der Abschnitt Pfade definiert einzelne Endpunkte (Pfade) in Ihrer API und die von diesen Endpunkten unterstützten HTTP-Methoden (Operationen)
 
 ```console
@@ -102,7 +102,7 @@ Der Abschnitt Pfade definiert einzelne Endpunkte (Pfade) in Ihrer API und die vo
                     type: string
 ```
 
-- Parameters
+**Parameters**
 Bei Operationen können Parameter über einen URL-Pfad (/users/{userId}), einen Query-String (/users?role=admin), Header (X-CustomHeader: Value) oder Cookies (Cookie: debug=0) übergeben werden.
 Sie können die Datentypen der Parameter, das Format, ob sie erforderlich oder optional sind, und andere Details definieren.
 
@@ -125,7 +125,7 @@ Sie können die Datentypen der Parameter, das Format, ob sie erforderlich oder o
             description: OK 
 ```
 
-- Request Body
+**Request Body**
 Wenn ein Vorgang einen Anfragebody sendet, verwenden Sie das Schlüsselwort requestBody, um den Body-Inhalt und den Medientyp zu beschreiben.
 
 ```console
@@ -147,7 +147,7 @@ Wenn ein Vorgang einen Anfragebody sendet, verwenden Sie das Schlüsselwort requ
             description: Created 
 ```
 
-- Responses
+**Responses**
 Für jede Operation können Sie mögliche Statuscodes, wie 200 OK oder 404 Not Found, und das Schema des Antwortkörpers definieren. Schemata können inline definiert oder über $ref referenziert werden. Sie können auch Beispielantworten für verschiedene Inhaltstypen bereitstellen:
 
 ```console
@@ -187,7 +187,7 @@ Für jede Operation können Sie mögliche Statuscodes, wie 200 OK oder 404 Not F
             description: Unexpected error 
 ```
 
-- Input and Output Models
+**Input and Output Models**
 Im Abschnitt "Globale Komponenten/Schemata" können Sie allgemeine Datenstrukturen definieren, die in Ihrer API verwendet werden. Sie können über $ref immer dann referenziert werden, wenn ein Schema erforderlich ist - in Parametern, Request- und Response-Bodies.
 
 ```console
@@ -207,8 +207,8 @@ Im Abschnitt "Globale Komponenten/Schemata" können Sie allgemeine Datenstruktur
           - id
           - name 
 ```
-  
-Referenzen zu den Komponenten herstellen:
+
+**Referenzen zu den Komponenten herstellen:**
 
 ```console
   paths:
@@ -242,10 +242,9 @@ Referenzen zu den Komponenten herstellen:
         responses:
           '201':
             description: Created 
-
 ```  
 
-- Authentication
+**Authentication**
 Die Schlüsselwörter securitySchemes und security werden verwendet, um die in Ihrer API verwendeten Authentifizierungsmethoden zu beschreiben.
 
 ```console
