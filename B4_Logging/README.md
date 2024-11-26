@@ -184,7 +184,7 @@ builder.Services.AddControllers();
 Erstelle über die Standardvorlage (Template) in Visual Studio ein neues ASP.NET Core Web API Projekt und implementiere in diesem Projekt eine Protokollierung (Logger), die verschiedene Nachrichten (Info, Warnings, Error, etc.) in eine Protokolldatei schreibt.
 
 - Verwende hierfür die Third-party Komponente SeriLog (<https://serilog.net/>) über den NuGet Package Manager.
-- Registriere die Logger-Komponenten in der Program.cs Datei.$
+- Registriere die Logger-Komponenten in der Program.cs Datei.
 - Ergänze den WeatherForecast Controller, sodass jeder Actionaufruf (Get) in der Protokolldatei festgehalten wird.
 - Prüfe die Meldungen in der Logdatei.
 
