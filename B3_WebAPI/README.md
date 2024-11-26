@@ -167,20 +167,25 @@ Hier werden alle Action-Methoden des Controllers implementiert.
 Anstelle Visual Studio kann füpr die Entwicklung auch Visual Studio Code verwendet werden.
 
 Verwenden Sie hierfür den folgenden Kommandozeilenbefehl:
-`dotnet new webapi --use-controllers -n WeatherApi`
+
+- `dotnet new webapi --use-controllers -n WeatherApi`
 
 Es kann ein Entwicklerzertifikat installiert werden:
-`dotnet dev-certs https --trust`
+
+- `dotnet dev-certs https --trust`
 
 Das Projekt aus dem Terminal wie folgt gestaret werden:
-`dotnet run --launch-profile https`
+
+- `dotnet run --launch-profile https`
 
 Die Swagger Dokumentation kann wie folgt im Browser abgerufen werden:
-`https://localhost:5001/swagger`
+
+- `https://localhost:5001/swagger`
 
 Optionale Pakete z.B. Entity Framework können wie folgt einem Projekt hinzugefügt werden:
-`dotnet add package Microsoft.EntityFrameworkCore.SqlServer`
-`dotnet add package Microsoft.EntityFrameworkCore.Tools`
+
+- `dotnet add package Microsoft.EntityFrameworkCore.SqlServer`
+- `dotnet add package Microsoft.EntityFrameworkCore.Tools`
 
 ---
 
@@ -200,6 +205,6 @@ Optionale Pakete z.B. Entity Framework können wie folgt einem Projekt hinzugef�
 | **Lösungselemente** | Lauffähiges ASP.NET Core WebAPI Projekt                                                       |
 
 Implementiere das "**Create a web API with ASP.NET Core**" Projekt komplett indem die sämtliche Schritte ausgeführt werden.
-[Tutorial](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-9.0&tabs=visual-studio)
 
-Teste das API mit Postman oder VSC-REST-Extension
+- [Tutorial](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-9.0&tabs=visual-studio)
+- Teste das API mit Postman oder VSC-REST-Extension
