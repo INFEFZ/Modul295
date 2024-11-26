@@ -35,10 +35,15 @@ Dies ermöglicht die Interaktion zwischen verschiedenen Softwarekomponenten, z. 
 ## 1.2. Hauptmerkmale von ASP.NET Core WebAPI
 
 **Plattformunabhängigkeit:** ASP.NET Core ist auf mehreren Plattformen (Windows, macOS, Linux) verfügbar.
+
 **Leistung:** Es wurde von Grund auf optimiert, um hohe Leistung zu erzielen, und nutzt die neuesten Technologien für schnelles Rendering und effizienten Betrieb.
+
 **RESTful APIs:** Mit ASP.NET Core WebAPI können Sie RESTful APIs erstellen, die auf HTTP-Methoden wie GET, POST, PUT, DELETE usw. basieren, um CRUD-Operationen (Create, Read, Update, Delete) auf Ressourcen zu ermöglichen.
+
 **Modularität:** ASP.NET Core folgt einem modularen Ansatz, bei dem nur die benötigten Komponenten in einer Anwendung eingebunden werden, was zu einer kleineren und schnelleren Anwendung führt.
+
 **Integration mit anderen Technologien:** ASP.NET Core WebAPI kann mit verschiedenen Datenbanken und Technologien (wie Entity Framework Core, SQL Server, MongoDB, Redis usw.) zusammenarbeiten.
+
 **Sicherheitsfeatures:** Es bietet eingebaute Sicherheitsfunktionen, darunter Authentifizierung und Autorisierung (z. B. mit JWT, OAuth, oder Identity Server).
 
 ASP.NET Core WebAPI ist eine leistungsstarke und flexible Möglichkeit, moderne Web-APIs zu entwickeln.
