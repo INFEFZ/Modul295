@@ -5,11 +5,11 @@
 - [1. Voraussetzungen / Softwareinstallationen](#1-voraussetzungen--softwareinstallationen)
   - [1.1. Visual Studio](#11-visual-studio)
   - [1.2. Visual Studio Code](#12-visual-studio-code)
-  - [1.3. Extension - MS-SQL](#13-extension---ms-sql)
-  - [1.4. Extension - Live Server](#14-extension---live-server)
-  - [1.5. Extension - REST-Client](#15-extension---rest-client)
-  - [1.6. Extension - Prettier - Code formatter](#16-extension---prettier---code-formatter)
-  - [1.7. Extension - ESLint](#17-extension---eslint)
+    - [1.3. Extension - MS-SQL](#13-extension---ms-sql)
+    - [1.4. Extension - Live Server](#14-extension---live-server)
+    - [1.5. Extension - REST-Client](#15-extension---rest-client)
+    - [1.6. Extension - Prettier - Code formatter](#16-extension---prettier---code-formatter)
+    - [1.7. Extension - ESLint](#17-extension---eslint)
   - [1.8. SQL-Datenbanken](#18-sql-datenbanken)
   - [1.9. Node JS](#19-node-js)
     - [1.9.1. Installation und Version prüfen](#191-installation-und-version-prüfen)
@@ -33,23 +33,23 @@
 
 ![visual studio code](./x_gitres/visual-studio-code.png)
 
-## 1.3. Extension - MS-SQL
+### 1.3. Extension - MS-SQL
 
 ![Extension MS-SQL](./x_gitres/vsc-extension-mssql.png)
 
-## 1.4. Extension - Live Server
+### 1.4. Extension - Live Server
 
 ![Extension Live Server](./x_gitres/live-server.png)
 
-## 1.5. Extension - REST-Client
+### 1.5. Extension - REST-Client
 
 ![visual studio code](./x_gitres/vsc-extension-rest-client.png)
 
-## 1.6. Extension - Prettier - Code formatter
+### 1.6. Extension - Prettier - Code formatter
 
 ![extension prettier](./x_gitres/vsc-extension-prettier.png)
 
-## 1.7. Extension - ESLint
+### 1.7. Extension - ESLint
 
 ![extension eslint](./x_gitres/vsc-extension-eslint.png)
 
