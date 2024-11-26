@@ -150,9 +150,6 @@ Hier werden alle Action-Methoden des Controllers implementiert.
 
 </br>
 
---
-
-</br>
 
 ## 2.2. Visual Studio Code WebAPI Template Projekt
 
@@ -206,4 +203,3 @@ Implementiere das "**Create a web API with ASP.NET Core**" Projekt komplett inde
 [Tutorial](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-9.0&tabs=visual-studio)
 
 Teste das API mit Postman oder VSC-REST-Extension
-
