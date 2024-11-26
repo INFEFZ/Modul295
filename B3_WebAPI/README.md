@@ -14,7 +14,8 @@
     - [2.1.4. Einstiegspunkt (Program.cs)](#214-einstiegspunkt-programcs)
     - [2.1.5. Controller Klasse](#215-controller-klasse)
     - [2.1.6. API-Testen mit Swagger u. Postman](#216-api-testen-mit-swagger-u-postman)
-  - [2.2. WebAPI Tutorial ToDo (Create a web API with controllers)](#22-webapi-tutorial-todo-create-a-web-api-with-controllers)
+  - [2.2. Visual Studio Code WebAPI Template Projekt](#22-visual-studio-code-webapi-template-projekt)
+  - [2.3. WebAPI Tutorial ToDo (Create a web API with controllers)](#23-webapi-tutorial-todo-create-a-web-api-with-controllers)
 
 ---
 
@@ -149,7 +150,46 @@ Hier werden alle Action-Methoden des Controllers implementiert.
 
 </br>
 
-## 2.2. WebAPI Tutorial ToDo (Create a web API with controllers)
+--
+
+</br>
+
+## 2.2. Visual Studio Code WebAPI Template Projekt
+
+|                     |                                                                                                        |
+| ------------------- | ------------------------------------------------------------------------------------------------------ |
+| **Lernziele**       | Sie können in Visual Studio Code ein ASP.NET Core WebAPI Projekt anlegen                               |
+|                     | Sie können die Projektverzeichnisstruktur erläutern                                                    |
+|                     | Sie können eine Projekt starten und testen                                                             |
+| **Sozialform**      | Einzelarbeit                                                                                           |
+| **Auftrag**         | siehe unten                                                                                            |
+| **Hilfsmittel**     | [Microsoft Learn](https://learn.microsoft.com/de-de/dotnet/core/tools/dotnet-new-sdk-templates#webapi) |
+| **Zeitbedarf**      | 30min                                                                                                  |
+| **Lösungselemente** | Lauffähiges ASP.NET Core WebAPI Projekt                                                                |
+
+Anstelle Visual Studio kann füpr die Entwicklung auch Visual Studio Code verwendet werden.
+
+Verwenden Sie hierfür den folgenden Kommandozeilenbefehl:
+`dotnet new webapi --use-controllers -n WeatherApi`
+
+Es kann ein Entwicklerzertifikat installiert werden:
+`dotnet dev-certs https --trust`
+
+Das Projekt aus dem Terminal wie folgt gestaret werden:
+`dotnet run --launch-profile https`
+
+Die Swagger Dokumentation kann wie folgt im Browser abgerufen werden:
+`https://localhost:5001/swagger`
+
+Optionale Pakete z.B. Entity Framework können wie folgt einem Projekt hinzugefügt werden:
+`dotnet add package Microsoft.EntityFrameworkCore.SqlServer`
+`dotnet add package Microsoft.EntityFrameworkCore.Tools`
+
+---
+
+</br>
+
+## 2.3. WebAPI Tutorial ToDo (Create a web API with controllers)
 
 |                     |                                                                                               |
 | ------------------- | --------------------------------------------------------------------------------------------- |
@@ -166,3 +206,4 @@ Implementiere das "**Create a web API with ASP.NET Core**" Projekt komplett inde
 [Tutorial](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-9.0&tabs=visual-studio)
 
 Teste das API mit Postman oder VSC-REST-Extension
+
