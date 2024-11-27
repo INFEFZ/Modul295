@@ -14,8 +14,9 @@
   - [2.3. Beispiel LINQ-Abfrage](#23-beispiel-linq-abfrage)
   - [2.4. Beispiel Entity Framework mit LINQ](#24-beispiel-entity-framework-mit-linq)
 - [3. Aufgaben](#3-aufgaben)
-  - [3.1. EF Db-First Datenbankzugriff](#31-ef-db-first-datenbankzugriff)
-  - [3.2. EF Code-First Datenbankzugriff](#32-ef-code-first-datenbankzugriff)
+  - [3.1. Tutorial - Erste Schritte mit EF Core (SQLite)](#31-tutorial---erste-schritte-mit-ef-core-sqlite)
+  - [3.2. EF Db-First Datenbankzugriff](#32-ef-db-first-datenbankzugriff)
+  - [3.3. EF Code-First Datenbankzugriff](#33-ef-code-first-datenbankzugriff)
 
 ---
 
@@ -166,7 +167,40 @@ class LinqSample
 
 # 3. Aufgaben
 
-## 3.1. EF Db-First Datenbankzugriff
+## 3.1. Tutorial - Erste Schritte mit EF Core (SQLite)
+
+|                     |                                                                                                              |
+| ------------------- | ------------------------------------------------------------------------------------------------------------ |
+| **Lernziele**       | Sie können per Entity-Framework auf eine Sqlite Datenbank zugreifen und Daten manipulieren.                  |
+|                     | Sie können den Lösungsansatz "Code-First" umsetzen.                                                          |
+|                     |                                                                                                              |
+| **Sozialform**      | Einzelarbeit                                                                                                 |
+| **Auftrag**         | siehe unten                                                                                                  |
+| **Hilfsmittel**     | [Microsoft Learn](https://learn.microsoft.com/de-de/ef/core/get-started/overview/first-app?tabs=netcore-cli) |
+| **Zeitbedarf**      | 90min                                                                                                        |
+| **Lösungselemente** | Visual Studio Projekt                                                                                        |
+
+Arbeite dieses [Tutorial](https://learn.microsoft.com/de-de/ef/core/get-started/overview/first-app?tabs=netcore-cli)) komplett durch und prüfe die Funktionsweise des Programmcodes.
+Beachte die erforderlichen Voraussetzungen (NuGet-Paket) und die Paket-Manager-Konsole (PMC) Befehle.
+
+```console
+Install-Package Microsoft.EntityFrameworkCore.Tools
+Add-Migration InitialCreate
+Update-Database
+```
+
+DB Browser for SQLite
+
+Du kannst mit dem Datenbanktool "DB Browser for SQLite" den Inhalt der Datenbank `blogging.db` prüfen und bei Bedarf ändern.
+[Download DB Browser for SQLite](https://sqlitebrowser.org/dl/)
+
+---
+
+</br>
+
+[Tutorial](https://learn.microsoft.com/de-de/ef/core/get-started/overview/first-app?tabs=netcore-cli)
+
+## 3.2. EF Db-First Datenbankzugriff
 
 |                     |                                                                                          |
 | ------------------- | ---------------------------------------------------------------------------------------- |
@@ -179,15 +213,20 @@ class LinqSample
 | **Zeitbedarf**      | 90min                                                                                    |
 | **Lösungselemente** | Visual Studio Projekt                                                                    |
 
-**A1 - Console Anwendung**
-Erstelle in Visual Studio eine Konsole Anwendung (Name=EFCoreDbFirst) und programmiere mit Entity-Framework (EF) eine Datenmutation in der EFCoreDbFirst Datenbank.
-Verwende dabei den Lösungsansatz von "**Db-First**"
+**A1 - Console Anwendung:**
+
+- Erstelle in Visual Studio eine Konsole Anwendung (Name=`EFCoreDbFirst`) und programmiere mit Entity-Framework (EF) eine Datenmutation in der EFCoreDbFirst Datenbank.
+- Verwende dabei den Lösungsansatz von "**Db-First**"
+
+![Blog Datenbank](./x_gitres/task-create-blog-database.png)
+
+![Blog Datenbank Struktur](./x_gitres/task-create-blog-database-structure.png)
 
 Folgende Datenmutation müssen programmiert werden:
 
-- `Context.Add()`
+- `Context.Blogs.Add()`
   - Diese Methode fügt einen neuen Blog (Url) hinzu.
-- `Context.Read()`
+- `Context.Blogs`
   - Diese Methode listet alle Blog Einträge, sortiert nach der BlogId auf der Konsole
 
 Voraussetzungen:
@@ -198,14 +237,16 @@ Voraussetzungen:
   - `PM> Microsoft.EntityFrameworkCore.Tools`
 
 Um die Model Klassen aus der Datenbanktabellen ins Projekt einzufügen muss im Package-Manager folgender Befehl verwendet werden:
-`PM>Scaffold-DbContext "Server=.\;Database=EFCoreDbFirst;Trusted_Connection=True;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Context BlogContext`
 
-**A2 - Post Einträge (Optional)**
-Erweitere die Anwendung, sodass auch Post-Einträge ausgelesen und eingefügt werden können.
+- `PM>Scaffold-DbContext "Server=.\;Database=EFCoreDbFirst;Trusted_Connection=True;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Context BlogContext`
+
+**A2 - Post Einträge (Optional):**
+
+- Erweitere die Anwendung, sodass auch Post-Einträge ausgelesen und eingefügt werden können.
 
 ---
 
-## 3.2. EF Code-First Datenbankzugriff
+## 3.3. EF Code-First Datenbankzugriff
 
 |                     |                                                                                          |
 | ------------------- | ---------------------------------------------------------------------------------------- |
@@ -218,8 +259,9 @@ Erweitere die Anwendung, sodass auch Post-Einträge ausgelesen und eingefügt we
 | **Zeitbedarf**      | 90min                                                                                    |
 | **Lösungselemente** | Visual Studio Projekt                                                                    |
 
-**A1 - Console Anwendung**
-Erstelle in Visual Studio eine Konsole Anwendung (EFCoreCodeFirst) und generiere mit den Lösungsansatz "Code-First" aus den C#-Klassen eine neue Datenbank EFCoreCodeFirst.
+**A1 - Console Anwendung:**
+
+- Erstelle in Visual Studio eine Konsole Anwendung (`EFCoreCodeFirst`) und generiere mit den Lösungsansatz "Code-First" aus den C#-Klassen eine neue Datenbank `EFCoreCodeFirst`.
 
 ![C#-Klassen](./x_gitres/task-ef-code-first.png)
 ![Projekt](./x_gitres/task-ef-code-first-project.png)
@@ -244,8 +286,13 @@ Um nachfolgende Änderungen an den C# Klassen in die Datenbank zu synchronisiere
 
 Folgende Datenmutation müssen programmiert werden:
 
-- `Context.Add()`: Diese Methode fügt einen neuen Autor mit min. drei Büchern hinzu.
-- `- Context.Read()`: Diese Methode listet alle Buchtitel auf der Konsole.
+- `Context.Books.Add()`: Diese Methode fügt einen neuen Autor mit min. drei Büchern hinzu.
+- `Context.Books`: Diese Methode listet alle Buchtitel auf der Konsole.
 
-**A2 - Books Einträge (Optional)**
-Erweitere die Anwendung, sodass die Autoren mit den Büchern gelistet werden.
+**A2 - Books Einträge anzeigen:**
+
+- Erweitere die Anwendung, sodass die Autoren mit den Büchern gelistet werden.
+
+**A3 - Books Einträge erfassen:**
+
+- Erweitere die Anwendung, sodass die Autoren mit den Büchern eingefügt werden.

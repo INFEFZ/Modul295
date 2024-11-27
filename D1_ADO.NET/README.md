@@ -184,13 +184,15 @@ Verwende dabei folgende ADO.NET Klassen:
 - `SqlCommand()`: SQL-Kommandos festlegen (z.B. select … from .., insert into …)
 - `SqlDataReader()` : Abfrageresultat Zeilenweise auslesen
 
-Um den Datenbankzugriff herstellen wird ein Connection-String benötigt
-(z.B. `"Data Source=.;Initial Catalog=EFCoreDbFirst;Integrated Security=True;"`)
+Um den Datenbankzugriff herstellen wird ein Connection-String benötigt:
+
+z.B.:`"Data Source=.;Initial Catalog=EFCoreDbFirst;Integrated Security=True;"`
 
 **2. Konfigurationsdatei appsettings.json**
-Die Verbindungszeichenfolge (Connection-String) sollte nicht im Programm hardcodiert sein.
-Diese ist als Settings-String in der `appsettings.json` Datei einzutragen, sodass diese einfach konfiguriert werden kann.
-Fügen Sie dem Projekt eine `appsettings.json` Datei hinzu und ändern Sie das Programm, sodass die Verbindungszeichenfolgen aus dieser Datei ausgelesen wird.
+
+- Die Verbindungszeichenfolge (Connection-String) sollte nicht im Programm hardcodiert sein.
+- Diese ist als Settings-String in der `appsettings.json` Datei einzutragen, sodass diese einfach konfiguriert werden kann.
+- Fügen Sie dem Projekt eine `appsettings.json` Datei hinzu und ändern Sie das Programm, sodass die Verbindungszeichenfolgen aus dieser Datei ausgelesen wird.
 
 **3. Daten löschen (Optional)**
-Erweitere die Anwendung, sodass auch Blog-Einträge gelöscht werden können
+- Erweitere die Anwendung, sodass auch Blog-Einträge gelöscht werden können
