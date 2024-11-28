@@ -176,7 +176,7 @@ Beachte, dass die beiden PK Attribute auf Identity gesetzt und die Lösch- und A
 
 **1. Console Anwendung:**
 
-- Erstelle in Visual Studio eine Konsole Anwendung (Name=AdoNetDatabase) und programmiere mit ADO.NET nachfolgende Methoden.
+- Erstelle in Visual Studio eine Konsole Anwendung (**Name=AdoNet-Blog**) und programmiere mit ADO.NET nachfolgende Methoden.
 
 - `Select()`: Diese Methode listet alle Blog Einträge auf der Konsole
 - `Insert()`: Diese Methode fügt einen neuen Blog (Url) hinzu.
