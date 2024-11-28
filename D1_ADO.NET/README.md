@@ -197,6 +197,21 @@ z.B.:`"Data Source=.;Initial Catalog=EFCoreDbFirst;Integrated Security=True;Trus
 - Diese ist als Settings-String in der `appsettings.json` Datei einzutragen, sodass diese einfach konfiguriert werden kann.
 - Fügen Sie dem Projekt eine `appsettings.json` Datei hinzu und ändern Sie das Programm, sodass die Verbindungszeichenfolgen aus dieser Datei ausgelesen wird.
 
+**NuGet-Package:**
+
+- `Microsoft.Extensions.Configuration.Json`
+
+**Beispiel:**
+
+```c#
+var configuration = new ConfigurationBuilder()
+  .SetBasePath(Directory.GetCurrentDirectory())
+  .AddJsonFile($"appsettings.json");
+
+var config = configuration.Build();
+_connectionString = config.GetConnectionString("Db1");
+```
+
 **3. Daten löschen (Optional):**
 
 - Erweitere die Anwendung, sodass auch Blog-Einträge gelöscht werden können
