@@ -10,7 +10,7 @@
   - [1.5. ADO.NET Core Klassen (unvollständig)](#15-adonet-core-klassen-unvollständig)
   - [1.6. Beispiel](#16-beispiel)
 - [2. Aufgaben](#2-aufgaben)
-  - [2.1. Blog Datenank erstellen](#21-blog-datenank-erstellen)
+  - [2.1. Blog Datenbank erstellen](#21-blog-datenbank-erstellen)
   - [2.2. ADO.NET Datenbankzugriff](#22-adonet-datenbankzugriff)
 
 ---
@@ -127,7 +127,7 @@ static class Program
 
 # 2. Aufgaben
 
-## 2.1. Blog Datenank erstellen
+## 2.1. Blog Datenbank erstellen
 
 |                     |                                                                                    |
 | ------------------- | ---------------------------------------------------------------------------------- |
@@ -142,18 +142,20 @@ static class Program
 | **Zeitbedarf**      | 50min                                                                              |
 | **Lösungselemente** | SQL Skript Dateien                                                                 |
 
-**Datenbank erstellen**
-Erstelle in SQL-Server eine neue Datenbank mit den beiden nachfolgenden Tabellen.
-Lege für diese Aufgabe in Visual Studio oder Management Studio ein Datenbankprojekt an.
+**Datenbank erstellen:**
 
+- Erstelle in SQL-Server eine neue Datenbank mit den beiden nachfolgenden Tabellen.
+- Lege für diese Aufgabe in Visual Studio oder Management Studio ein Datenbankprojekt an.
+ 
 Beachte, dass die beiden PK Attribute auf Identity gesetzt und die Lösch- und Aktualisierungsweitergabe beim Foreign Key BlogId aktiviert ist.
 
 ![Blog Datenbank](./x_gitres/task-create-blog-database.png)
 
 ![Blog Datenbank Struktur](./x_gitres/task-create-blog-database-structure.png)
 
-**Daten einfügen**
-Erstelle eine SQL-Skript Datei, in welcher einige (min. 2 Blog) Einträge in die Datenbank eingefügt werden.
+**Daten einfügen:**
+
+- Erstelle eine SQL-Skript Datei, in welcher einige (min. 2 Blog) Einträge in die Datenbank eingefügt werden.
 
 ---
 
@@ -172,8 +174,9 @@ Erstelle eine SQL-Skript Datei, in welcher einige (min. 2 Blog) Einträge in die
 | **Zeitbedarf**      | 90min                                                                                                      |
 | **Lösungselemente** | Funktionierendes Visual Studio Projekt                                                                     |
 
-**1. Console Anwendung**
-Erstelle in Visual Studio eine Konsole Anwendung (Name=AdoNetDatabase) und programmiere mit ADO.NET nachfolgende Methoden.
+**1. Console Anwendung:**
+
+- Erstelle in Visual Studio eine Konsole Anwendung (Name=AdoNetDatabase) und programmiere mit ADO.NET nachfolgende Methoden.
 
 - `Select()`: Diese Methode listet alle Blog Einträge auf der Konsole
 - `Insert()`: Diese Methode fügt einen neuen Blog (Url) hinzu.
@@ -188,11 +191,12 @@ Um den Datenbankzugriff herstellen wird ein Connection-String benötigt:
 
 z.B.:`"Data Source=.;Initial Catalog=EFCoreDbFirst;Integrated Security=True;"`
 
-**2. Konfigurationsdatei appsettings.json**
+**2. Konfigurationsdatei appsettings.json:**
 
 - Die Verbindungszeichenfolge (Connection-String) sollte nicht im Programm hardcodiert sein.
 - Diese ist als Settings-String in der `appsettings.json` Datei einzutragen, sodass diese einfach konfiguriert werden kann.
 - Fügen Sie dem Projekt eine `appsettings.json` Datei hinzu und ändern Sie das Programm, sodass die Verbindungszeichenfolgen aus dieser Datei ausgelesen wird.
 
-**3. Daten löschen (Optional)**
+**3. Daten löschen (Optional):**
+
 - Erweitere die Anwendung, sodass auch Blog-Einträge gelöscht werden können
