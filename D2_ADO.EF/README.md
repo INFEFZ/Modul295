@@ -180,7 +180,7 @@ class LinqSample
 | **Zeitbedarf**      | 90min                                                                                                        |
 | **Lösungselemente** | Visual Studio Projekt                                                                                        |
 
-Arbeite dieses [Tutorial](https://learn.microsoft.com/de-de/ef/core/get-started/overview/first-app?tabs=netcore-cli)) komplett durch und prüfe die Funktionsweise des Programmcodes.
+Arbeite dieses [Tutorial](https://learn.microsoft.com/de-de/ef/core/get-started/overview/first-app?tabs=netcore-cli) komplett durch und prüfe die Funktionsweise des Programmcodes.
 Beachte die erforderlichen Voraussetzungen (NuGet-Paket) und die Paket-Manager-Konsole (PMC) Befehle.
 
 ```console
@@ -192,6 +192,7 @@ Update-Database
 DB Browser for SQLite
 
 Du kannst mit dem Datenbanktool "DB Browser for SQLite" den Inhalt der Datenbank `blogging.db` prüfen und bei Bedarf ändern.
+
 [Download DB Browser for SQLite](https://sqlitebrowser.org/dl/)
 
 ---
@@ -245,6 +246,8 @@ Um die Model Klassen aus der Datenbanktabellen ins Projekt einzufügen muss im P
 - Erweitere die Anwendung, sodass auch Post-Einträge ausgelesen und eingefügt werden können.
 
 ---
+
+</br>
 
 ## 3.3. EF Code-First Datenbankzugriff
 
