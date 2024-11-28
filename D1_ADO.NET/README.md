@@ -189,7 +189,7 @@ Verwende dabei folgende ADO.NET Klassen:
 
 Um den Datenbankzugriff herstellen wird ein Connection-String benötigt:
 
-z.B.:`"Data Source=.;Initial Catalog=EFCoreDbFirst;Integrated Security=True;"`
+z.B.:`"Data Source=.;Initial Catalog=EFCoreDbFirst;Integrated Security=True;TrustServerCertificate=True"`
 
 **2. Konfigurationsdatei appsettings.json:**
 
