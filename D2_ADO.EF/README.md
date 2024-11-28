@@ -15,8 +15,8 @@
   - [2.4. Beispiel Entity Framework mit LINQ](#24-beispiel-entity-framework-mit-linq)
 - [3. Aufgaben](#3-aufgaben)
   - [3.1. Tutorial - Erste Schritte mit EF Core (SQLite)](#31-tutorial---erste-schritte-mit-ef-core-sqlite)
-  - [3.2. EF Db-First Datenbankzugriff](#32-ef-db-first-datenbankzugriff)
-  - [3.3. EF Code-First Datenbankzugriff](#33-ef-code-first-datenbankzugriff)
+  - [3.2. EF Db-First Datenbankzugriff (Blog)](#32-ef-db-first-datenbankzugriff-blog)
+  - [3.3. EF Code-First Datenbankzugriff (Books)](#33-ef-code-first-datenbankzugriff-books)
 
 ---
 
@@ -199,9 +199,7 @@ Du kannst mit dem Datenbanktool "DB Browser for SQLite" den Inhalt der Datenbank
 
 </br>
 
-[Tutorial](https://learn.microsoft.com/de-de/ef/core/get-started/overview/first-app?tabs=netcore-cli)
-
-## 3.2. EF Db-First Datenbankzugriff
+## 3.2. EF Db-First Datenbankzugriff (Blog)
 
 |                     |                                                                                          |
 | ------------------- | ---------------------------------------------------------------------------------------- |
@@ -216,7 +214,7 @@ Du kannst mit dem Datenbanktool "DB Browser for SQLite" den Inhalt der Datenbank
 
 **A1 - Console Anwendung:**
 
-- Erstelle in Visual Studio eine Konsole Anwendung (Name=`EFCoreDbFirst`) und programmiere mit Entity-Framework (EF) eine Datenmutation in der EFCoreDbFirst Datenbank.
+- Erstelle in Visual Studio eine Konsole Anwendung (Name=`EFCore-DbFirst-Blog`) und programmiere mit Entity-Framework (EF) eine Datenmutation in der EFCoreDbFirst Datenbank.
 - Verwende dabei den Lösungsansatz von "**Db-First**"
 
 ![Blog Datenbank](./x_gitres/task-create-blog-database.png)
@@ -249,7 +247,7 @@ Um die Model Klassen aus der Datenbanktabellen ins Projekt einzufügen muss im P
 
 </br>
 
-## 3.3. EF Code-First Datenbankzugriff
+## 3.3. EF Code-First Datenbankzugriff (Books)
 
 |                     |                                                                                          |
 | ------------------- | ---------------------------------------------------------------------------------------- |
@@ -264,7 +262,7 @@ Um die Model Klassen aus der Datenbanktabellen ins Projekt einzufügen muss im P
 
 **A1 - Console Anwendung:**
 
-- Erstelle in Visual Studio eine Konsole Anwendung (`EFCoreCodeFirst`) und generiere mit den Lösungsansatz "Code-First" aus den C#-Klassen eine neue Datenbank `EFCoreCodeFirst`.
+- Erstelle in Visual Studio eine Konsole Anwendung (`EFCore-CodeFirst-Books`) und generiere mit den Lösungsansatz "Code-First" aus den C#-Klassen eine neue Datenbank `EFCoreCodeFirst`.
 
 ![C#-Klassen](./x_gitres/task-ef-code-first.png)
 ![Projekt](./x_gitres/task-ef-code-first-project.png)
