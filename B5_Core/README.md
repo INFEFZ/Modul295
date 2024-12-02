@@ -404,7 +404,7 @@ Arbeiten Sie dieses Tutorial Schritt für Schritt komplett durch.
 | **Zeitbedarf**      | 90min                                                                                         |
 | **Lösungselemente** | Lauffähiges komplettes Web API Projekt, Präsentation der Lösung                               |
 
-Implementiere gemäss nachfolgendem Klassendiagramm und Open-API Dokumentation das Web-API Projekt in Visual Studio mit ASP.NET Core (Name = UserApi).
+Implementiere gemäss nachfolgendem Klassendiagramm und Open-API Dokumentation das Web-API Projekt in Visual Studio mit ASP.NET Core (**Name = UserApi**).
 Testen Sie die Funktionsweise mit Postman oder REST (VC-Extension)
 **Bemerkung:** Die Userdaten werden in der UserService Klasse verwaltet und müssen nicht gespeichert werden.
 
