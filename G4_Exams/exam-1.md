@@ -22,7 +22,7 @@
 |                     |                                        |
 | ------------------- | -------------------------------------- |
 | **Lernziele**       | LBV 295-1 - Element 1, Gewichtung 100% |
-| **Sozialform**      | Einzelarbeit                           |
+| **Sozialform**      | Partnerarbeit                          |
 | **Auftrag**         | siehe unten                            |
 | **Hilfsmittel**     | Internet                               |
 | **Zeitbedarf**      | 12 h                                   |
