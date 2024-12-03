@@ -24,7 +24,7 @@
   - [3.2. User REST-API](#32-user-rest-api)
   - [3.3. Movie REST-API mit SQL-Datenbank](#33-movie-rest-api-mit-sql-datenbank)
   - [3.4. Movie REST-API mit Service u. DTO-Klassen](#34-movie-rest-api-mit-service-u-dto-klassen)
-  - [3.5. REST API Ski-Service Migration (ASP.NET Core)](#35-rest-api-ski-service-migration-aspnet-core)
+  - [3.5. REST API Ski-Service Migration (ASP.NET Core), Optional](#35-rest-api-ski-service-migration-aspnet-core-optional)
 
 ---
 
@@ -404,8 +404,9 @@ Arbeiten Sie dieses Tutorial Schritt für Schritt komplett durch.
 | **Zeitbedarf**      | 90min                                                                                         |
 | **Lösungselemente** | Lauffähiges komplettes Web API Projekt, Präsentation der Lösung                               |
 
-Implementiere gemäss nachfolgendem Klassendiagramm und Open-API Dokumentation das Web-API Projekt in Visual Studio mit ASP.NET Core (**Name = UserApi**).
-Testen Sie die Funktionsweise mit Postman oder REST (VC-Extension)
+- Implementiere gemäss nachfolgendem Klassendiagramm und Open-API Dokumentation das Web-API Projekt in Visual Studio mit ASP.NET Core (**Name = UserApi**).
+- Testen Sie die Funktionsweise mit Postman oder REST (VC-Extension)
+
 **Bemerkung:** Die Userdaten werden in der UserService Klasse verwaltet und müssen nicht gespeichert werden.
 
 ![userapi-classes](./x_gitres/task-userapi-classes.png)
@@ -501,7 +502,7 @@ OpenAPI-Spezifikation (Swagger)
 
 Implementiere gemäss nachfolgendem Klassendiagramm und Open-API Dokumentation das Web-API Projekt in Visual Studio mit ASP.NET Core Web API (**Name=MoviesAPIv2**).
 
-- Verwende für den Datenbankzugriff das Entity-Framework mit der Code-First Variante.
+- Verwende für den Datenbankzugriff das Entity-Framework mit der **Code-First** Variante.
 - Dabei müssen die in der nachfolgenden API-Spezifikation enthaltenen Methoden vollständig implementiert werden.
 - Die Userdaten sollen mittels den CRUD Operationen in einer Datenbank gespeichert werden.
 - Testen Sie alle API Methoden mit Postman
@@ -543,7 +544,7 @@ OpenAPI-Spezifikation (Swagger)
 
 ---
 
-## 3.5. REST API Ski-Service Migration (ASP.NET Core)
+## 3.5. REST API Ski-Service Migration (ASP.NET Core), Optional
 
 |                     |                                                                                               |
 | ------------------- | --------------------------------------------------------------------------------------------- |

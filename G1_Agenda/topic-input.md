@@ -51,24 +51,7 @@ Die Präsentation wird im Anschluss der Klasse im OneNote (Platz für Zusammenar
 
 ---
 
-## Gruppe 3 (Testing, Validierungen, Versionierung)
-
-- Serverseitige Validierung von Eingabedaten
-  - Komponenten / Pakete
-  - Verwendung von FluentValidation Library, Rules
-- Übersicht u. Erläuterung der Logging und Debugging Varianten
-  - Sinn und Zweck
-- Versionierung
-  - Wie können Endpoints versioniert werden
-  - Beispiel
-- Testing
-  - Automatisierte u. manuelle Testmöglichkeiten von Request-Methoden (Endpoints)
-  - Mocking / Mocking Tests
-  - Voraussetzungen
-
----
-
-## Gruppe 4 (HTTP Authentifizierung Methoden)
+## Gruppe 3 (HTTP Authentifizierung Methoden)
 
 - Authentisierung vs. Autorisierung
 - Basic Authentication
@@ -89,3 +72,20 @@ Die Präsentation wird im Anschluss der Klasse im OneNote (Platz für Zusammenar
     - [AllowAnonymous]
 - Übersicht u. Erläuterung zu den HTTP Status Codes
   - Unerlaubter Zugriff 4xxx etc.
+
+---
+
+## Gruppe 4 (Testing, Validierungen, Versionierung)
+
+- Serverseitige Validierung von Eingabedaten
+  - Komponenten / Pakete
+  - Verwendung von FluentValidation Library, Rules
+- Übersicht u. Erläuterung der Logging und Debugging Varianten
+  - Sinn und Zweck
+- Versionierung
+  - Wie können Endpoints versioniert werden
+  - Beispiel
+- Testing
+  - Automatisierte u. manuelle Testmöglichkeiten von Request-Methoden (Endpoints)
+  - Mocking / Mocking Tests
+  - Voraussetzungen
