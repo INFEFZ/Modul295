@@ -319,13 +319,13 @@ Die Authentifizierung bei Web-APIs ist ein wichtiger Aspekt, um sicherzustellen,
 Erstelle über das Standard Template ein neues Web-API Projekt (WeatherForecast).
 Der Wetterdatenabruf soll nun nur über ein **Web-API Key** möglich sein (Middleware).
 Der gültige **API-Key** soll dabei aus der **appsettings.json** Konfiguration geladen werden.
-Ohne gültigen API-Key soll der Request **Status = 401** zurückliefern.
+Ohne gültigen **API-Key** soll der Request **Status = 401** zurückliefern.
 Teste den Wetterdatenabruf mit Postman.
 
 Vorgehen:
 
-- Erstelle den Projektordner ApiKeyCustomMiddleware
-- Generiere ein API-Key Code und füge diesen in der appsettings.json Datei ein.
+- Erstelle den Projektordner `ApiKeyCustomMiddleware`
+- Generiere ein API-Key Code und füge diesen in der **appsettings.json** Datei ein.
 
 ```json
 {
@@ -341,7 +341,7 @@ Vorgehen:
 ```
 
 - Erstelle einen neuen Projektordner (**Middleware**)
-- Füge dem Ordner eine neue Klasse z.B. ApiKeyMiddleware hinzu.
+- Füge dem Ordner eine neue Klasse z.B. `ApiKeyMiddleware` hinzu.
 - Implementiere in dieser Klasse folgende Methoden:
 
 ```c#
@@ -375,7 +375,7 @@ public class ApiKeyMiddleware
 }
 ```
 
-Die Middleware Komponente muss im Program.cs (Main()) registriert werden:
+Die Middleware Komponente muss im `Program.cs` (Main()) registriert werden:
 
 ```c#
 var builder = WebApplication.CreateBuilder(args);
