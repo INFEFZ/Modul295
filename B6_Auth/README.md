@@ -277,7 +277,7 @@ stringapiKey = Convert.ToBase64String(key);
 
 Die Authentifizierung bei Web-APIs ist ein wichtiger Aspekt, um sicherzustellen, dass nur autorisierte Benutzer oder Anwendungen auf die API zugreifen können. Es gibt verschiedene Methoden zur Authentifizierung bei Web-APIs.
 
-Aufgabe
+**Aufgabe:**
 
 - Ermitteln Sie alle wichtigen Informationen über das Ihnen zugeteilte Thema in Form einer Zusammenfassung und erstellen Sie eine Präsentation.
 - Die sichtbaren Ergebnisse der Gruppenarbeit sind Definitionslisten, Flow-Charts ergänzt mit Illustrationen und Verweisen auf die Literatur (Links).
@@ -316,11 +316,10 @@ Aufgabe
 | **Zeitbedarf**      | 80min                                                      |
 | **Lösungselemente** | Lauffähiges Web API Projekt                                |
 
-A1
 Erstelle über das Standard Template ein neues Web-API Projekt (WeatherForecast).
-Der Wetterdatenabruf soll nun nur über ein Web-API Key möglich sein (Middleware).
-Der gültige API-Key soll dabei aus der appsettings.json Konfiguration geladen werden.
-Ohne gültigen API-Key soll der Request Status = 401 zurückliefern.
+Der Wetterdatenabruf soll nun nur über ein **Web-API Key** möglich sein (Middleware).
+Der gültige **API-Key** soll dabei aus der **appsettings.json** Konfiguration geladen werden.
+Ohne gültigen API-Key soll der Request **Status = 401** zurückliefern.
 Teste den Wetterdatenabruf mit Postman.
 
 Vorgehen:
