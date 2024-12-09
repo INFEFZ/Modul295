@@ -46,6 +46,7 @@
 
 - **ASP.NET Core WebAPI**
   - [Einführung](../B3_WebAPI/README.md)
+  - [.NET CLI](../B3_WebAPI/dotnet-cli.md)
   - Aufgaben
 
 ---

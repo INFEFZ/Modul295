@@ -330,18 +330,18 @@ Der Swagger-Editor bietet eine einfache Möglichkeit, mit der OpenAPI-Spezifikat
         }
       },
       "post": {
-        …
+        
       }
     },
     "/api/Todo/{id}": {
       "get": {
-        …
+        
       },
       "put": {
-        …
+        
       },
       "delete": {
-        …
+        
       }
     }
   },
