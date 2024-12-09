@@ -26,6 +26,12 @@
 
 ---
 
+- **GIT und GitHub**
+  - [Einführung](../E1_Git/README.md)
+  - Aufgaben
+
+---
+
 - **OpenAPI / Swagger**
   - [Einführung Spezifikation](../B1_OpenAPI/README.md)
   - Aufgabe
