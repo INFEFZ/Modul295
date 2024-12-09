@@ -169,11 +169,11 @@ Hier werden alle Action-Methoden des Controllers implementiert.
 | **Zeitbedarf**      | 30min                                                                                                  |
 | **Lösungselemente** | Lauffähiges ASP.NET Core WebAPI Projekt                                                                |
 
-Anstelle Visual Studio kann füpr die Entwicklung auch Visual Studio Code verwendet werden.
+Anstelle Visual Studio kann für die Entwicklung auch Visual Studio Code verwendet werden.
 
 Verwenden Sie hierfür den folgenden Kommandozeilenbefehl:
 
-- `dotnet new webapi --use-controllers -n WeatherApi`
+- `dotnet new webapi --use-controllers --output WeatherForecastAPI --framework net8.0`
 
 Es kann ein Entwicklerzertifikat installiert werden:
 
