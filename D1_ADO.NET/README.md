@@ -139,14 +139,14 @@ static class Program
 | **Sozialform**      | Einzelarbeit                                                                       |
 | **Auftrag**         | siehe unten                                                                        |
 | **Hilfsmittel**     | [Microsoft Learn](https://learn.microsoft.com/de-de/dotnet/framework/data/adonet/) |
-| **Zeitbedarf**      | 50min                                                                              |
+| **Zeitbedarf**      | 30 min                                                                             |
 | **Lösungselemente** | SQL Skript Dateien                                                                 |
 
 **Datenbank erstellen:**
 
 - Erstelle in SQL-Server eine neue Datenbank mit den beiden nachfolgenden Tabellen.
 - Lege für diese Aufgabe in Visual Studio oder Management Studio ein Datenbankprojekt an.
- 
+
 Beachte, dass die beiden PK Attribute auf Identity gesetzt und die Lösch- und Aktualisierungsweitergabe beim Foreign Key BlogId aktiviert ist.
 
 ![Blog Datenbank](./x_gitres/task-create-blog-database.png)
@@ -171,25 +171,25 @@ Beachte, dass die beiden PK Attribute auf Identity gesetzt und die Lösch- und A
 | **Sozialform**      | Einzelarbeit                                                                                               |
 | **Auftrag**         | siehe unten                                                                                                |
 | **Hilfsmittel**     | [Microsoft Learn](https://learn.microsoft.com/de-de/dotnet/framework/data/adonet/)                         |
-| **Zeitbedarf**      | 90min                                                                                                      |
+| **Zeitbedarf**      | 50 min                                                                                                     |
 | **Lösungselemente** | Funktionierendes Visual Studio Projekt                                                                     |
 
 **1. Console Anwendung:**
 
 - Erstelle in Visual Studio eine Konsole Anwendung (**Name=AdoNet-Blog**) und programmiere mit ADO.NET nachfolgende Methoden.
 
-- `Select()`: Diese Methode listet alle Blog Einträge auf der Konsole
-- `Insert()`: Diese Methode fügt einen neuen Blog (Url) hinzu.
+- **`Select()`**: Diese Methode listet alle Blog Einträge auf der Konsole
+- **`Insert()`**: Diese Methode fügt einen neuen Blog (Url) hinzu.
 
 Verwende dabei folgende ADO.NET Klassen:
 
-- `SqlConnection()`: Verbindung zur DB herstellen
-- `SqlCommand()`: SQL-Kommandos festlegen (z.B. select … from .., insert into …)
-- `SqlDataReader()` : Abfrageresultat Zeilenweise auslesen
+- **`SqlConnection()`**: Verbindung zur DB herstellen
+- **`SqlCommand()`**: SQL-Kommandos festlegen (z.B. select … from .., insert into …)
+- **`SqlDataReader()`** : Abfrageresultat Zeilenweise auslesen
 
 Um den Datenbankzugriff herstellen wird ein Connection-String benötigt:
 
-z.B.:`"Data Source=.;Initial Catalog=EFCoreDbFirst;Integrated Security=True;TrustServerCertificate=True"`
+z.B.:**`"Data Source=.;Initial Catalog=EFCoreDbFirst;Integrated Security=True;TrustServerCertificate=True"`**
 
 **2. Konfigurationsdatei appsettings.json:**
 
@@ -199,7 +199,7 @@ z.B.:`"Data Source=.;Initial Catalog=EFCoreDbFirst;Integrated Security=True;Trus
 
 **NuGet-Package:**
 
-- `Microsoft.Extensions.Configuration.Json`
+- **`Microsoft.Extensions.Configuration.Json`**
 
 **Beispiel:**
 
