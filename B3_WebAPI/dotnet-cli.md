@@ -53,7 +53,7 @@ Verwalten von NuGet-Paketen:
 Paket hinzufügen:
 > `dotnet add package <Paketname>`
 
-- Beispiel: 
+- Beispiel:
 - `dotnet add package Microsoft.EntityFrameworkCore.InMemory`
 - `dotnet add package Microsoft.EntityFrameworkCore.Design`
 - `dotnet add package Microsoft.EntityFrameworkCore.SqlServer`

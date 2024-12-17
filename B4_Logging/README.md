@@ -70,7 +70,7 @@ Logmeldungen können somit in der Controller-Methoden einfach ausgegeben werden.
 ## 2.1. Was ist Serilog?
 
 - Serilog ist eine .NET-Bibliothek, die eine Diagnoseprotokollierung in Dateien, auf der Konsole und fast überall, wo Sie es wünschen, ermöglicht.
-- Serilog kann in klassischen .NET-Framework-Anwendungen und für Anwendungen verwendet werden, die unter dem neuesten und besten .NET 6 laufen.
+- Serilog kann in klassischen .NET-Framework-Anwendungen und für Anwendungen verwendet werden, die unter dem neuesten und besten .NET x laufen.
 - Eine der größten Stärken von Serilog ist, dass es mit Blick auf eine strukturierte Protokollierung entwickelt wurde.
 - <https://serilog.net/>
 
@@ -98,7 +98,7 @@ Logmeldungen können somit in der Controller-Methoden einfach ausgegeben werden.
             {
                 "Name": "File",
                 "Args": {
-                    "path": "../webapi-.log",
+                    "path": "logs/webapi-.log",
                     "rollingInterval": "Day",
                     "outputTemplate": "[{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} {CorrelationId} {Level:u3}] {Username} {Message:lj}{NewLine}{Exception}"
                 }

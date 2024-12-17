@@ -155,7 +155,6 @@ Hier werden alle Action-Methoden des Controllers implementiert.
 
 </br>
 
-
 ## 2.2. Visual Studio Code WebAPI Template Projekt
 
 |                     |                                                                                                        |
