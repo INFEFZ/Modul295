@@ -72,18 +72,18 @@ Wenn Sie also **HTTP** verwenden, bedeutet das, dass Sie die Daten im Klartextfo
 
 Unterm Strich ist die Basisauthentifizierung also in Ordnung, wenn Sie **SSL** aktiviert haben, und sie sollte nicht ohne dies verwendet werden.
 
-Vorteile:
+**Vorteile:**
 
 - Einfach zu implementieren, da keine Verschlüsselung erforderlich ist.
 - Die Antwortzeit ist relativ kurz, da es nur einen Aufruf gibt.
 
-Nachteile:
+**Nachteile:**
 
 - Durch die fehlende Verschlüsselung ist das Sicherheitsrisiko relativ hoch.
 - Die Benutzerdaten sind auf dem Server statisch und müssen auch in der Client-Anwendung fest einprogrammiert werden.
 - Die Anmeldedaten müssen bei jeder Anfrage übergeben werden.
 
-Verwendung:
+**Verwendung:**
 
 - Wird häufig in einfachen Szenarien oder internen APIs verwendet, aber ist aufgrund der **geringen Sicherheit** nicht für öffentlich zugängliche APIs geeignet.
 
@@ -100,7 +100,7 @@ Der API-Kunde speichert das Token auf seinem Gerät und sendet es bei jedem nach
 
 Ein Token kann man sich als verschlüsselte Zeichenfolge vorstellen. Das bedeutet, dass einige relevante Benutzerinformationen einem Hashing oder einer Verschlüsselung mit einem privaten Schlüssel unterzogen werden und ein Token erzeugt wird.
 
-Vorteile:
+**Vorteile:**
 
 - Das Token kann beliebig viele Informationen enthalten (z. B. Benutzerrolle, Ablaufdatum).
 - Das Token ist unabhängig vom Serverzustand (stateless), was bedeutet, dass keine Sitzung auf dem Server gespeichert werden muss.
@@ -108,12 +108,12 @@ Vorteile:
 - Das Token kann zu jedem Zeitpunkt widerrufen werden.
 - Geeignet für mobile Apps und Single-Page-Anwendungen (SPAs).
 
-Nachteile:
+**Nachteile:**
 
 - Wenn das Token gestohlen wird, kann es missbraucht werden, bis es abläuft oder widerrufen wird.
 - Es muss sicher gespeichert und übertragen werden (z. B. im Authorization-Header oder im Cookie).
 
-Verwendung:
+**Verwendung:**
 
 - Häufig verwendet in modernen Webanwendungen, Single Page Applications (SPAs), mobilen Apps und APIs, bei denen keine persistente Sitzung erforderlich ist.
 
@@ -123,20 +123,20 @@ Eine der beliebtesten Methoden zur Erstellung und Verwaltung von Token ist **JWT
 
 ![JWT Structure](./x_gitres/jwt-structure.png)
 
-JWT besteht also aus drei Teilen, die jeweils durch einen Punkt getrennt sind:
+JWT besteht also aus **drei Teilen**, die jeweils durch einen Punkt getrennt sind:
 
-- Header
-- Nutzlast (Payload)
-- Signatur
+- **Header**
+- **Nutzlast (Payload)**
+- **Signatur**
 
 Der Header enthält Metadaten wie:
 
-- Typ, eine feste Zeichenfolge, die anzeigt, dass es sich um ein JWT handelt
-- Der Hash-Algorithmus, es können mehrere Hash-Algorithmen verwendet werden, wie z. B.: SHA256, HMAC usw.
+- **Typ**, eine feste Zeichenfolge, die anzeigt, dass es sich um ein **JWT** handelt
+- Der **Hash-Algorithmus**, es können mehrere Hash-Algorithmen verwendet werden, wie z. B.: SHA256, HMAC usw.
 
 ![JWT Header](./x_gitres/jwt-header.png)
 
-Die Payload ist der schwerste Teil des Tokens, er enthält die **claims**, die im Grunde nichts anderes als JSON, Attribute oder Elemente sind.
+Die **Payload** ist der schwerste Teil des Tokens, er enthält die **claims**, die im Grunde nichts anderes als JSON, Attribute oder Elemente sind.
 
 ![JWT Payload](./x_gitres/jwt-payload.png)
 
@@ -148,7 +148,7 @@ Es gibt drei Arten von Angaben, die in eines Payloads enthalten sind:
 
 - Der dritte Typ sind die **privaten Angaben**. Diese sind, wie der Name schon sagt, nicht standardisiert. Der Verbraucher und der Anbieter können entscheiden, welche Angaben in die Nutzdaten aufgenommen werden sollen.
 
-Signature
+**Signature**
 
 - Die Signatur wird erstellt, indem der base64-kodierte Header mit der base64-kodierten Payload verkettet wird und diese Zeichenfolge dann mit einem Hash-Verfahren mit einem Secret versehen wird.
 - Das Secret kann eine beliebige Zeichenfolge sein, die der API-Anbieter sehr vertraulich behandeln muss. Wenn das Geheimnis an Unbefugte weitergegeben wird, können diese den API-Anbieter angreifen.
@@ -199,18 +199,18 @@ Verwendung:
 - Der Benutzer autorisiert die Anwendung (Client) über einen Authorization Server, und die Anwendung erhält ein Access Token, das sie dann verwendet, um auf geschützte Ressourcen (Resource Server) zuzugreifen.
 - OAuth 2.0 ermöglicht auch die Verwendung von Refresh Tokens, die es einer Anwendung erlauben, Access Tokens zu erneuern, ohne dass der Benutzer sich erneut anmelden muss.
 
-Vorteile:
+**Vorteile:**
 
 - Sehr flexibel und sicher, da Benutzerdaten niemals direkt mit der Anwendung geteilt werden.
 - Unterstützt verschiedene Flows wie Authorization Code Flow, Implicit Flow, Client Credentials Flow und Resource Owner Password Credentials Flow.
 - Ermöglicht die Verwendung von Access Tokens und Refresh Tokens, was eine längere Sitzung ohne ständige Benutzerinteraktion ermöglicht.
 
-Nachteile:
+**Nachteile:**
 
 - Komplexe Implementierung.
 - Erfordert die Einrichtung eines Authorization Servers und die Verwaltung von Tokens.
 
-Verwendung:
+**Verwendung:**
 
 - Ideal für APIs, die von Drittanbietern genutzt werden (z. B. Google API, Facebook API, Microsoft Graph).
 - Weit verbreitet in modernen Web- und mobilen Anwendungen, die Single Sign-On (SSO) oder den Zugriff auf benutzerspezifische Daten in mehreren Anwendungen benötigen.
@@ -221,17 +221,17 @@ Verwendung:
 
 Die Session-basierte Authentifizierung verwendet einen Server-gestützten Ansatz, bei dem nach der Anmeldung des Benutzers eine Sitzung auf dem Server erstellt wird. Der Server gibt dem Client ein Sitzungstoken, das bei jeder Anfrage mitgesendet wird, um den Benutzer zu identifizieren.
 
-Vorteile:
+**Vorteile:**
 
 - Einfach zu implementieren und zu verstehen.
 - Keine Notwendigkeit für Token-basierte Authentifizierung.
 
-Nachteile:
+**Nachteile:**
 
 - Der Server muss den Zustand der Sitzung speichern (stateful), was die Skalierbarkeit beeinträchtigen kann.
 - Sessions können anfällig für Angriffe wie Session-Hijacking sein, wenn das Token unsicher gespeichert oder übertragen wird.
 
-Verwendung:
+**Verwendung:**
 
 - Häufig in traditionellen Webanwendungen, bei denen Benutzeranmeldungen und Sitzungen erforderlich sind.
 
@@ -272,10 +272,10 @@ stringapiKey = Convert.ToBase64String(key);
 | **Sozialform**      | Gruppenarbeit                                                               |
 | **Auftrag**         | siehe unten                                                                 |
 | **Hilfsmittel**     |                                                                             |
-| **Zeitbedarf**      | 40min                                                                       |
+| **Zeitbedarf**      | 50min                                                                       |
 | **Lösungselemente** | Kurzpräsentation in Markdown                                                |
 
-Die Authentifizierung bei Web-APIs ist ein wichtiger Aspekt, um sicherzustellen, dass nur autorisierte Benutzer oder Anwendungen auf die API zugreifen können. Es gibt verschiedene Methoden zur Authentifizierung bei Web-APIs.
+Die **Authentifizierung** bei Web-APIs ist ein wichtiger Aspekt, um sicherzustellen, dass nur autorisierte Benutzer oder Anwendungen auf die API zugreifen können. Es gibt verschiedene Methoden zur Authentifizierung bei Web-APIs.
 
 **Aufgabe:**
 
@@ -375,7 +375,7 @@ public class ApiKeyMiddleware
 }
 ```
 
-Die Middleware Komponente muss im `Program.cs` (Main()) registriert werden:
+Die **Middleware** Komponente muss im `Program.cs` (`Main()`) registriert werden:
 
 ```c#
 var builder = WebApplication.CreateBuilder(args);
@@ -438,7 +438,7 @@ Der Dozent stellt Ihnen ein vorbereitetes Web-API Projekt auf GibHub zum Downloa
 In mehreren Projektdateien sind einige Code-Fragmente unvollständig und mit **TODO:** markiert.
 In diesen Codezeilen muss der Programmcode vervollständigt werden, sodass am Schluss ein funktionierendes und lauffähiges Programm entstehet.
 
-Projekt:
+**Projekt:**
 
 - <https://github.com/INFEFZ/Modul295-JWTAuth-Aufgabe>
 - Login: username:INFEFZ, Passwort: ibz12345$
@@ -446,18 +446,18 @@ Projekt:
 Vorgehen:
 
 - Rufen und öffnen Sie das Projekt auf GitHub
-- Suchen Sie über alle Projektdateien den TODO: Text
-- Vervollständigen Sie alle TODO: Texte mit dem korrekten Programmcode
+- Suchen Sie über alle Projektdateien den **TODO:** Text
+- Vervollständigen Sie alle **TODO:** Texte mit dem korrekten Programmcode
 - Testen Sie die Anwendung mit Postman.
-  - AccountController
+  - **AccountController**
     - Login mit Username u. Passwort um bei korrekter Anmeldung ein JWT zu erhalten
-  - TestController
+  - **TestController**
     - Endpoint First sollte immer auch ohne Anmeldung bzw. JWT aufgerufen werden können.
     - Tipp: `[AllowAnonymous]`
   - Endpoint Second darf nur mit vorgängiger Anmeldung (JWT) aufgerufen werden.
     - Tipp: `[Authorize]`
 
-Bemerkung:
+**Bemerkung:**
 Beachten Sie, dass in der Main() Methode `UseAuthentication()` aufgerufen werden muss.
 
 ```c#
