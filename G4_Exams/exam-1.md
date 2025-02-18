@@ -20,7 +20,7 @@
 ## 1.1. Organisation
 
 |                     |                                        |
-| ------------------- | -------------------------------------- |
+| :------------------ | :------------------------------------- |
 | **Lernziele**       | LBV 295-1 - Element 1, Gewichtung 100% |
 | **Sozialform**      | Einzelarbeit                           |
 | **Auftrag**         | siehe unten                            |
@@ -108,6 +108,7 @@ Zusatzpunkte für optionale Erweiterungen. Zur Erreichung der max. Punktzahl mü
 Es müssen folgende Randbedingungen eingehalten werden:
 
 - Es müssen folgende Randbedingungen eingehalten werden:
+- Das WebAPI muss in Visual Studio mit ASP.NET/C# implementiert sein.
 - Als Datenbanksystem ist MS-SQL oder MySQL zu verwenden.
 - Postman ist als Web-API Test-Tool zu verwenden.
 - Der Datenbankzugriff hat über einen OR-Mapper zu erfolgen
