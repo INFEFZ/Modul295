@@ -33,5 +33,7 @@
 
 ---
 
-- **Ski-Service (Optional)**
-  - Migration von Node.js nach ASP.NET Core
+- [Gruppenarbeiten Tag 3 u. Tag 4](../G4_Exams/groupwork-webapi.md)
+  - WebAPI-Grundlagen
+  - Authentifizierung
+  - Präsentation
